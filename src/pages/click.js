@@ -19,7 +19,10 @@ const Menu_footer = ({ onClose, onAdd, onReset, onOne }) => {
 const Store = ({ onClose }) => {
     return (
         <div className="popup-shop">
-            <button onClick={onClose} className="btn_close">Close</button>
+            <h1 className="shop">SHOP</h1>
+            <div className="shop_items">
+            </div>
+            <button onClick={onClose} className="btn_close_shop">Close</button>
         </div>
     );
 }
@@ -55,7 +58,7 @@ const Click = () => {
     function Add_One() {
         clickMe(1, '+')
     }
-
+    
     function clickMe(amount, sign) {
         switch (sign) {
             case '+':
@@ -85,6 +88,7 @@ const Click = () => {
                 sign='+'
                 text='$'
             />
+
             <div className="block_btn">
                 <button onClick={toggleMenu} className="btn_open">Addition</button>
                 <button onClick={toggleShop} className="btn_open">Store</button>

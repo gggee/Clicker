@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
 import Home from './pages';
 import About from './pages/about';
 import Props from './pages/props';
 import State from './pages/state';
 import Click from './pages/click';
+
 function App() {
   return (
     <Router>
